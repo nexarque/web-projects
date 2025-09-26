@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        .menu {
+            background: #333;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            padding: 14px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background: red;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            background: white;
+        }
+        .dropdown:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#"> Home</a>
+        <div class="dropdown">
+            <a href="#">Courses</a>
+            <div class="submenu">
+                <a href="#">
+                    C programming
+                </a>
+                <a href="#">Python</a>
+                <a href="#">Java</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
